@@ -9,7 +9,7 @@ public class BalanceVerificator {
 
     public static void balValid(String str) {
         // Check for validity
-        if (!str.matches("[^a-zA-Z0-9]+")) {
+        if (!str.matches("[{(\\[\\])}]+")) {
             System.out.println("The string contains character that doesn’t belong to bracket types ([{ or }])");
         } else {
             // Create base
